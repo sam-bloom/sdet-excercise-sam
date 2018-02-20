@@ -9,12 +9,12 @@ Serenity for reporting
 
 I have used jdk 1.8 to run the profile
 
-To run simple maven build: mvn clean verify serenity:aggregate
+To run simple maven build: clean verify serenity:aggregate
 
-To run as maven build to test all the scenarios: mvn clean verify -Dcucumber.options="--tags @TEST" serenity:aggregate
+To run as maven build to test all the scenarios: clean verify -Dcucumber.options="--tags @TEST" serenity:aggregate
 
-To run as maven build only with positive test scenarios: mvn clean verify -Dcucumber.options="--tags @POSITIVE" serenity:aggregate
+To run as maven build only with positive test scenarios: clean verify -Dcucumber.options="--tags @POSITIVE" serenity:aggregate
 
-To run as maven build only with positive test scenarios: mvn clean verify -Dcucumber.options="--tags @NEGATIVE" serenity:aggregate
+To run as maven build only with positive test scenarios: clean verify -Dcucumber.options="--tags @NEGATIVE" serenity:aggregate
 
 Report: After test execution Serenity can be accessed in /sdet-excercise-sam/target/site/serenity/index.html 
